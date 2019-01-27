@@ -8,7 +8,8 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "ng build --prod --output-path docs --base-href gabes-page"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +27,7 @@
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.7.0",
     "@angular/cli": "1.6.2",
     "@angular/compiler-cli": "^5.0.0",
     "@angular/language-service": "^5.0.0",
